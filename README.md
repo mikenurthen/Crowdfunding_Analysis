@@ -1,4 +1,7 @@
+NOTE: You can follow what was done in step-by-step format by comparing the original (unedited) <b>CrowdfundingBook</b> Excel file against the completed (analyzed) <b>Crowdfunding_Solved</b> Excel file.
+
 # Crowdfunding Analysis in Microsoft Excel
+
 Crowdfunding platforms like Kickstarter and Indiegogo have been growing in success and popularity since the late 2000s. From independent content creators to famous celebrities, more and more people are using crowdfunding to launch new products and generate buzz, but not every project has found success.
 
 To receive funding, projects must meet or exceed an initial goal, so many organizations dedicate considerable resources looking through old projects in an attempt to discover “the trick” to finding success.
@@ -24,7 +27,7 @@ To receive funding, projects must meet or exceed an initial goal, so many organi
 
 - The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date.
   - Created a new column `Date Created Conversion` that uses [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained in `launched_at` into Excel's date format.
-  - Create a new column named `Date Ended Conversion` that uses [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained in `deadline` into Excel's date format.
+  - Created a new column `Date Ended Conversion` that uses [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained in `deadline` into Excel's date format.
  
 ## Outcomes Based On Launch Date
 - Created new worksheet <i>Outcome Based on Launch Date</i> with a pivot table that has a column of `outcome`, rows of `Date Created Conversion`, values based on the count of `outcome`, and filters based on `parent category` and `Years`.
@@ -36,7 +39,6 @@ Given the provided data, what are three conclusions that we can draw about crowd
 2. Parent Category of Theater has both the highest number of canceled campaigns as well as the highest number of successful campaigns.
 3. Journalism is the least popular crowdfunded campaign with a total of 4 successful campaigns.
 
-
 What are some limitations of this dataset?
 -	This dataset only has data from 7 countries.
 -	This dataset only includes 9 parent category crowdfunding campaigns.
@@ -44,9 +46,8 @@ What are some limitations of this dataset?
 What are some other possible tables and/or graphs that we could create, and what additional value would they provide?
 - Comparing the average donation per backer in successful vs failed campaigns would be helpful. It could help indicate whether a new live campaign was on track to succeed or not given the cumulative average of donations being received per backer at that point in the campaign.
 
-
 ## Crowdfunding Goal Analysis
-- Create a new sheet with 8 columns:
+- Created new worksheet <i>Outcome Based on Goal</i> with 8 columns:
   - `Goal`
   - `Number Successful`
   - `Number Failed`
@@ -55,7 +56,7 @@ What are some other possible tables and/or graphs that we could create, and what
   - `Percentage Successful`
   - `Percentage Failed`
   - `Percentage Canceled`
-- In the `Goal` column, create 12 rows with the following headers:
+- In the `Goal` column, created 12 rows with the following headers:
   - Less than 1000
   - 1000 to 4999
   - 5000 to 9999
