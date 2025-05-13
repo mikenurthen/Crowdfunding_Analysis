@@ -70,7 +70,7 @@ What are some other possible tables and/or graphs that we could create, and what
   - 45000 to 49999
   - Greater than or equal to 50000
  
-  - ![image](https://github.com/user-attachments/assets/12e875f8-3523-4413-b6dd-be71f1cf5d41)
+![image](https://github.com/user-attachments/assets/12e875f8-3523-4413-b6dd-be71f1cf5d41)
 
 - Using the `COUNTIFS()` formula, counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populated the `Number Successful`, `Number Failed`, and `Number Canceled` columns with these data points.
 
